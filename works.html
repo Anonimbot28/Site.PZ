@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мої роботи — PresentationLab</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Додаткові стилі для сторінки робіт */
+    .works-main {
+      padding: 80px 20px 140px;
+      min-height: 100vh;
+    }
+
+    .works-wrapper {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .works-title {
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .works-subtitle {
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 50px;
+      font-size: 18px;
+    }
+
+    .work-item {
+      background: rgba(26, 26, 46, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .work-item:hover {
+      border-color: rgba(108, 99, 255, 0.5);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 40px rgba(108, 99, 255, 0.2);
+    }
+
+    .work-item h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .work-item p {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .pdf-viewer {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+      background: #000;
+      margin-bottom: 20px;
+    }
+
+    .video-viewer {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+      background: #000;
+      margin-bottom: 20px;
+    }
+
+    .open-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      border-radius: 12px;
+      border: 1px solid rgba(108, 99, 255, 0.3);
+      background: rgba(108, 99, 255, 0.1);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .open-btn:hover {
+      background: rgba(108, 99, 255, 0.2);
+      border-color: #6c63ff;
+      transform: translateX(5px);
+    }
+
+    .works-footer {
+      text-align: center;
+      padding: 60px 0 40px;
+    }
+
+    .btn-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #6c63ff 0%, #5a52d5 100%);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-home:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(108, 99, 255, 0.4);
+    }
+  </style>
+</head>
+
+<body class="site-page works-page">
+
+  <!-- BACKGROUND -->
+  <div class="bg-grid"></div>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a class="brand" href="index.html">
+          <span class="brand-badge"></span>
+          <div>
+            <span>PresentationLab</span>
+            <small>Каталог програм для презентацій</small>
+          </div>
+        </a>
+
+        <!-- БУРГЕР МЕНЮ -->
+        <button class="burger-icon" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Головна</a>
+          <a href="power-point.html">PowerPoint</a>
+          <a href="google-slides.html">Google Slides</a>
+          <a href="canva.html">Canva</a>
+          <a href="prezi.html">Prezi</a>
+          <a href="compare.html">Порівняння</a>
+          <a class="active" href="works.html">Мої роботи</a>
+          <a href="about-me.html">Про мене</a>
+        </div>
+
+        <!-- МОБІЛЬНЕ МЕНЮ -->
+        <nav class="mobile-nav">
+          <a href="index.html">Головна</a>
+          <a href="power-point.html">PowerPoint</a>
+          <a href="google-slides.html">Google Slides</a>
+          <a href="canva.html">Canva</a>
+          <a href="prezi.html">Prezi</a>
+          <a href="compare.html">Порівняння</a>
+          <a class="active" href="works.html">Мої роботи</a>
+          <a href="about-me.html">Про мене</a>
+        </nav>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="works-main">
+    <div class="works-wrapper">
+
+      <h1 class="works-title">Мої роботи</h1>
+      <p class="works-subtitle">Навчальні та дизайнерські роботи у форматі PDF та відео</p>
+
+      <!-- Відео -->
+      <div class="work-item">
+        <h3>📹 Відео презентація</h3>
+        <p>Відеопрезентація створена для навчального проєкту</p>
+        <video class="video-viewer" controls>
+          <source src="PDF/0126.mp4" type="video/mp4">
+          Ваш браузер не підтримує відео.
+        </video>
+        <a class="open-btn" href="PDF/0126.mp4" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Відкрити відео
+        </a>
+      </div>
+
+      <!-- Інфографіка -->
+      <div class="work-item">
+        <h3>📊 Інфографіка</h3>
+        <p>Візуалізація даних та статистики у зрозумілому форматі</p>
+        <iframe class="pdf-viewer" src="PDF/infografika.pdf"></iframe>
+        <a class="open-btn" href="PDF/infografika.pdf" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Відкрити PDF
+        </a>
+      </div>
+
+      <!-- Бюлетень -->
+      <div class="work-item">
+        <h3>📰 Бюлетень</h3>
+        <p>Інформаційний бюлетень з новинами та оновленнями</p>
+        <iframe class="pdf-viewer" src="PDF/bulletin.pdf"></iframe>
+        <a class="open-btn" href="PDF/bulletin.pdf" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Відкрити PDF
+        </a>
+      </div>
+
+      <!-- Business Brochure -->
+      <div class="work-item">
+        <h3>💼 Business Agency Brochure</h3>
+        <p>Професійна брошура для бізнес-агентства</p>
+        <iframe class="pdf-viewer" src="PDF/business-brochure.pdf"></iframe>
+        <a class="open-btn" href="PDF/business-brochure.pdf" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Відкрити PDF
+        </a>
+      </div>
+
+      <!-- English Tips -->
+      <div class="work-item">
+        <h3>🗣️ English Tips Infographic</h3>
+        <p>Інфографіка з порадами для вивчення англійської мови</p>
+        <iframe class="pdf-viewer" src="PDF/english-tips.pdf"></iframe>
+        <a class="open-btn" href="PDF/english-tips.pdf" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Відкрити PDF
+        </a>
+      </div>
+
+      <!-- Presentation Software -->
+      <div class="work-item">
+        <h3>💻 ПЗ для створення презентацій</h3>
+        <p>Огляд програмного забезпечення для презентацій</p>
+        <iframe class="pdf-viewer" src="PDF/presentation-software.pdf"></iframe>
+        <a class="open-btn" href="PDF/presentation-software.pdf" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Відкрити PDF
+        </a>
+      </div>
+
+    </div>
+
+    <div class="works-footer">
+      <a href="index.html" class="btn-home">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Повернутися на головну
+      </a>
+    </div>
+  </main>
+
+  <!-- ================= РОЗШИРЕНИЙ ФУТЕР ================= -->
+  <footer class="footer-extended">
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        
+        <div class="footer-contact-box">
+          <div class="footer-icon-wrapper">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <h3>Адреса</h3>
+          <p>Україна, м. Рівне<br>ВПУ №1</p>
+        </div>
+
+        <div class="footer-contact-box">
+          <div class="footer-icon-wrapper">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3>Телефон</h3>
+          <p>(033) 531-60-31<br>(093) 531-60-31</p>
+        </div>
+
+        <div class="footer-contact-box">
+          <div class="footer-icon-wrapper">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <h3>Email</h3>
+          <p>jungarikbigl@gmail.com</p>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-middle">
+        
+        <div class="footer-column">
+          <h4>Програми для презентацій</h4>
+          <ul>
+            <li><a href="power-point.html">Microsoft PowerPoint</a></li>
+            <li><a href="google-slides.html">Google Slides</a></li>
+            <li><a href="canva.html">Canva Online</a></li>
+            <li><a href="prezi.html">Prezi Presentation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Корисне</h4>
+          <ul>
+            <li><a href="compare.html">Порівняння програм</a></li>
+            <li><a href="works.html">Приклади презентацій</a></li>
+            <li><a href="index.html#tips">Поради з дизайну</a></li>
+            <li><a href="index.html#software">Огляд інструментів</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Інформація</h4>
+          <ul>
+            <li><a href="about-me.html">Про автора</a></li>
+            <li><a href="index.html">Головна сторінка</a></li>
+            <li><a href="index.html#compare">Можливості</a></li>
+            <li><a href="works.html">Портфоліо робіт</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-socials">
+          <a href="#" aria-label="Viber">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.4 0C9.473.028 5.333.344 3.02 2.467 1.302 4.187.696 6.7.633 9.817.57 12.933.488 18.776 6.12 20.36h.003l-.004 2.644s-.037.977.61 1.176c.777.242 1.234-.5 1.98-1.302.407-.44.972-1.084 1.397-1.58 3.85.323 6.812-.417 7.15-.525.776-.252 5.176-.816 5.892-6.657.74-6.02-.36-9.83-2.34-11.546l-.01-.007C19.22-.5 14.607.012 11.4 0zm.504 1.93c2.91 0 6.81.43 8.293 1.894 1.66 1.573 2.582 4.806 1.948 10.062-.633 5.24-4.427 5.594-5.108 5.815-.292.095-2.986.768-6.4.488 0 0-2.53 3.063-3.32 3.853-.12.12-.26.167-.352.145-.13-.03-.166-.188-.165-.414l.02-4.444c-4.917-1.4-4.61-6.5-4.552-9.17.053-2.67.573-4.78 1.99-6.312C6.04 2.21 9.486 1.93 11.904 1.93z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Telegram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer-copyright">
+          <p>PresentationLab • ВПУ №1 м. Рівне • 2026</p>
+        </div>
+
+        <a href="#" class="scroll-to-top">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- OVERLAY ДЛЯ БУРГЕР МЕНЮ -->
+  <div class="overlay"></div>
+
+  <script src="script.js"></script>
+
+  <!-- БУРГЕР МЕНЮ СКРИПТ -->
+  <script>
+    const burgerIcon = document.querySelector('.burger-icon');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const overlay = document.querySelector('.overlay');
+
+    if (burgerIcon && mobileNav && overlay) {
+      burgerIcon.addEventListener('click', () => {
+        burgerIcon.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+      });
+
+      overlay.addEventListener('click', () => {
+        burgerIcon.classList.remove('active');
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      const mobileLinks = document.querySelectorAll('.mobile-nav a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          burgerIcon.classList.remove('active');
+          mobileNav.classList.remove('active');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+  </script>
+
+  
+
+</body>
+</html>
